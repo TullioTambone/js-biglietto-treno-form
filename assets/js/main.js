@@ -10,6 +10,7 @@ function myFunction(){
     let prezzo = km * 0.21;
 
     if (x.options[i] == x.options[0]) {
+        console.log(x.options[i].text);
         prezzo -= prezzo * 0.20;     
 
     }else if (x.options[i] == x.options[2]) {
@@ -20,7 +21,7 @@ function myFunction(){
 
     document.getElementById("passeggero").innerHTML = `
 
-    <div class="box flex-col p-1">
+    <div class="box flex-col p-1 bg-opacity">
         <h2 class="flex-start m-tb-1">Dettaglio passeggero</h2>
         <div class="flex gap-1">
             
@@ -34,7 +35,7 @@ function myFunction(){
             </div>
             <div class="card-element">
                 <h4>Carrozza</h4>
-                <h3>${Math.floor(Math.random()*10)}</h3>
+                <h3>${Math.floor(Math.random()*10)+1}</h3>
             </div>
             <div class="card-element">
                 <h4>Codice CP</h4>
@@ -47,7 +48,5 @@ function myFunction(){
         </div>
     </div>
     `
-
     console.log(prezzo.toFixed(2));
 }
-

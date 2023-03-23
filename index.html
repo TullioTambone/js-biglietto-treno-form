@@ -13,7 +13,7 @@
     <div class="container">
         <h2>Calcola il prezzo del tuo biglietto</h2>
         <div class="box">
-            <!-- <form> -->
+           
             <div class="form">
                 <div class="flex gap-10">
                     <div class="flex-col">
@@ -29,19 +29,19 @@
                     <div class="flex-col">
                         <label for="">Fascia di Età</label>
                         <select id="mySelect">
-                            <option value="">Minorenne</option>
-                            <option value="">Maggiorenne</option>
-                            <option value="">+65</option>
+                            <option value="minor">Minorenne</option>
+                            <option value="major">Maggiorenne</option>
+                            <option value="old">+65</option>
                         </select>
                     </div>
                 </div>
                 <div>
                     <input type="submit" value="genera biglietto" class="bottone" onclick="myFunction()">
 
-                    <input type="reset" value="Annulla" class="bottone">
+                    <input type="reset" value="Annulla" class="bottone" onclick="window.location.reload()">
                 </div>
             </div>    
-            <!-- </form> -->
+            
         </div>
 
         <div id="passeggero"></div>
