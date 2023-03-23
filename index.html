@@ -10,7 +10,42 @@
 
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <div class="box">
+            <!-- <form> -->
+            <div class="form">
+                <div class="flex gap-10">
+                    <div class="flex-col">
+                        <label for="nomecognome">Nome e Cognome</label>
+                        <input type="text" name="nomecognome" id="nomecognome">
+                    </div>
+
+                    <div class="flex-col">
+                        <label for="km">Chilometri da Percorrere</label>
+                        <input type="number" name="km" id="km">
+                    </div>
+
+                    <div class="flex-col">
+                        <label for="">Fascia di Età</label>
+                        <select id="mySelect">
+                            <option value="">Minorenne</option>
+                            <option value="">Maggiorenne</option>
+                            <option value="">+65</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="genera biglietto" class="bottone" onclick="myFunction()">
+
+                    <input type="reset" value="Annulla" class="bottone">
+                </div>
+            </div>    
+            <!-- </form> -->
+        </div>
+
+        <div id="passeggero"></div>
+    </div>
 
     <script src="./assets/js/main.js"></script>
 </body>
